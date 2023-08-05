@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap');
+
+
+
 .button {
     background-color: #B68C5A;
     border: none;
@@ -8,4 +14,23 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.centered {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-title {
+    font-family: 'EB Garamond', serif;
+}
+.para-title{
+    font-family: 'Poppins', sans-serif;
+}
+.business{
+    height: 72.34px;
+    width: 71.8px;
 }
