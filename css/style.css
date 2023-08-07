@@ -27,10 +27,56 @@
 .banner-title {
     font-family: 'EB Garamond', serif;
 }
-.para-title{
+
+.para-title {
     font-family: 'Poppins', sans-serif;
 }
-.business{
+
+.business {
     height: 72.34px;
     width: 71.8px;
+}
+
+
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin:20px;
+    padding: 10px;
+    border-radius: 8px;
+   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.05);
+}
+.accordion li label{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+label::before{
+    content: '+';
+    margin-left: 10px;
+    margin:0
+    font-size:24px;
+    font-weight:600;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 1-px 20px;
+}
+.accordion input[type="radio"]:checked + label::before{
+    content: '-';
 }
