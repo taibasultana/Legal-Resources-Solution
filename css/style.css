@@ -39,17 +39,18 @@
     width: 71.8px;
 }
 
+.slider-text {}
 
-
-.accordion li{
+.accordion li {
     list-style: none;
     width: 100%;
-    margin:20px;
+    margin: 20px;
     padding: 10px;
     border-radius: 8px;
-   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.05);
 }
-.accordion li label{
+
+.accordion li label {
     display: flex;
     padding: 10px;
     cursor: pointer;
@@ -57,28 +58,31 @@
     font-weight: 500;
     margin-bottom: 15px;
 }
-label::before{
+
+label::before {
     content: '+';
     margin-left: 10px;
-    margin:0
-    font-size:24px;
-    font-weight:600;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     display: none;
 }
 
-.accordion .content{
+.accordion .content {
     line-height: 26px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
 }
-.accordion input[type="radio"]:checked + label + .content{
+
+.accordion input[type="radio"]:checked+label+.content {
     max-height: 400px;
     padding: 10px 1-px 20px;
 }
-.accordion input[type="radio"]:checked + label::before{
+
+.accordion input[type="radio"]:checked+label::before {
     content: '-';
 }
